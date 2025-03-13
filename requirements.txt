@@ -1,0 +1,17 @@
+diffusers==0.27.2
+gdown==5.1.0
+huggingface-hub==0.22.2
+imageio==2.34.0
+ipython==8.12.3
+matplotlib==3.3.1
+mediapy==1.2.0
+moviepy==1.0.3
+numpy==1.21.2
+openai-clip==1.0.1
+opencv-python==4.10.0.84
+pillow==10.3.0
+scikit-learn==1.4.1.post1
+scipy==1.10.1
+tensorboard==2.16.2
+tokenizers==0.15.2
+transformers

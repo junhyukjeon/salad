@@ -167,6 +167,8 @@ save/
 log/
 qual/
 _backup_ckpt/*
-_*.py
 exp_attn/
 edit_result/
+visualization/data
+
+.ipynb_checkpoints/

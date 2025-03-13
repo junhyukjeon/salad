@@ -1,8 +1,14 @@
 # SALAD: Skeleton-Aware Latent Diffusion Model for Text-driven Motion Generation and Editing (CVPR 2025)
 
-![teaser_image](assets/vae.png)
-![teaser_image](assets/denoiser.png)
-![teaser_image](assets/editing.png)
+<p align="center">
+    <img src="assets/vae.png"/>
+    <br>
+    <br>
+    <img src="assets/denoiser.png" alt="teaser_image" width="500"/>
+    <br>
+    <br>
+    <img src="assets/editing.png"/>
+</p>
 
 <!-- <a href=""><img src="https://img.shields.io/badge/arXiv-Paper-<COLOR>.svg" height=22.5></a> -->
 <a href="https://seokhyeonhong.github.io/projects/salad/"><img src="https://img.shields.io/static/v1?label=Project&message=Page&color=red" height=22.5></a>

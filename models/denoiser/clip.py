@@ -22,11 +22,15 @@ class FrozenCLIPTextEncoder(nn.Module):
         # clip.model.convert_weights(self.model)
         # self.model.to(opt.device)
         if opt.clip_version == "ViT-B/32":
-            self.tokenizer = AutoTokenizer.from_pretrained(f"{opt.checkpoints_dir}/clip-vit-base-patch32")
-            self.model = AutoModel.from_pretrained(f"{opt.checkpoints_dir}/clip-vit-base-patch32")
+            self.tokenizer = AutoTokenizer.from_pretrained("openai/clip-vit-base-patch32", cache_dir="./checkpoints/clip-vit-base-patch32")
+            self.model = AutoModel.from_pretrained("openai/clip-vit-base-patch32", cache_dir="./checkpoints/clip-vit-base-patch32")
+            # self.tokenizer = AutoTokenizer.from_pretrained(f"{opt.checkpoints_dir}/clip-vit-base-patch32")
+            # self.model = AutoModel.from_pretrained(f"{opt.checkpoints_dir}/clip-vit-base-patch32")
         elif opt.clip_version == "ViT-L/14":
-            self.tokenizer = AutoTokenizer.from_pretrained(f"{opt.checkpoints_dir}/clip-vit-large-patch14")
-            self.model = AutoModel.from_pretrained(f"{opt.checkpoints_dir}/clip-vit-large-patch14")
+            self.tokenizer = AutoTokenizer.from_pretrained("openai/clip-vit-large-patch14", cache_dir="./checkpoints/clip-vit-large-patch14")
+            self.model = AutoModel.from_pretrained("openai/clip-vit-large-patch14", cache_dir="./checkpoints/clip-vit-large-patch14")
+            # self.tokenizer = AutoTokenizer.from_pretrained(f"{opt.checkpoints_dir}/clip-vit-large-patch14")
+            # self.model = AutoModel.from_pretrained(f"{opt.checkpoints_dir}/clip-vit-large-patch14")
         else:
             raise ValueError(f"Invalid CLIP version: {opt.clip_version}")
         
